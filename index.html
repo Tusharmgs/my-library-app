@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    
+    <h1>Library</h1>
+    <div class="contents">
+      <div class="button" id="viewButton">View Books</div>
+      <div class="button" id="insertButton">Insert Books</div>
+    </div>
+
+    <!-- Form -->
+    <div class="goBack goBackInsert hidden">🔙 Go Back</div>
+    <form class="hidden">
+      <div class="inputFields">
+        <input type="text" id="bookTitle" placeholder="Book Title" required />
+        <input type="text" id="authorName" placeholder="Author Name" required />
+        <input type="text" id="bookGenre" placeholder="Genre" required />
+      </div>
+      <div class="inputButtons">
+        <input type="reset" value="Reset" id="reset" />
+        <input type="submit" value="Submit" id="submit" />
+      </div>
+    </form>
+
+    <div class="goBack goBackView hidden">🔙 Go Back</div>
+    <div class="mainCardContent">
+      <div class="cardBack hidden">
+        <svg
+          class="previousBook"
+          width="40px"
+          height="40px"
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <style>
+              .cls-1 {
+                fill: none;
+                stroke: #ffffff;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 20px;
+              }
+            </style>
+          </defs>
+
+          <g data-name="Layer 2" id="Layer_2">
+            <g
+              data-name="E421, Back, buttons, multimedia, play, stop"
+              id="E421_Back_buttons_multimedia_play_stop"
+            >
+              <circle class="cls-1" cx="256" cy="256" r="246" />
+
+              <line class="cls-1" x1="352.26" x2="170.43" y1="256" y2="256" />
+
+              <polyline
+                class="cls-1"
+                points="223.91 202.52 170.44 256 223.91 309.48"
+              />
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div class="card hidden">
+        <div class="badge"></div>
+        <div class="image"></div>
+        <div class="title">
+          <span class="lable">Title :</span>
+          <span class="titleData"></span></div>
+        <div class="author">
+          <span class="lable">Author :</span>
+          <span class="authorData"></span>
+        </div>
+        <div class="genre">
+          <span class="lable">Genre :</span>
+        <span class="genreData"></span>
+        </div>
+        <div class="miscButtons">
+          <div class="readButton">Read</div>
+          <div class="removeButton">Remove</div>
+        </div>
+      </div>
+      <div class="cardForward hidden">
+        <svg
+          class="nextBook"
+          width="40px"
+          height="40px"
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="#ffffff"
+          transform="matrix(-1, 0, 0, 1, 0, 0)"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+
+          <g id="SVGRepo_iconCarrier">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: none;
+                  stroke: #ffffff;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 20px;
+                }
+              </style>
+            </defs>
+            <g data-name="Layer 2" id="Layer_2">
+              <g
+                data-name="E421, Back, buttons, multimedia, play, stop"
+                id="E421_Back_buttons_multimedia_play_stop"
+              >
+                <circle class="cls-1" cx="256" cy="256" r="246" />
+                <line class="cls-1" x1="352.26" x2="170.43" y1="256" y2="256" />
+                <polyline
+                  class="cls-1"
+                  points="223.91 202.52 170.44 256 223.91 309.48"
+                />
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
